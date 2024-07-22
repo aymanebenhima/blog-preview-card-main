@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;700&display=swap");
+
+:root {
+  --primary-color: hsl(47, 88%, 63%);
+  --white-color: hsl(0, 0%, 100%);
+  --grey-color: hsl(0, 0%, 42%);
+  --black-color: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--white-color);
+  border: 1px solid var(--black-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0.5rem 0.5rem;
+  width: 100%;
+  max-width: 20.22rem;
+}
+
+.card__header {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card--img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.card--tag {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 800;
+  background-color: var(--primary-color);
+  border-radius: 0.4rem;
+  padding: 0.4rem 1rem;
+  width: fit-content;
+  letter-spacing: -0.01rem;
+  color: var(--black-color);
+  margin-bottom: 1rem;
+}
+
+.card--date {
+  font-size: 0.8rem;
+}
+
+.card--title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--black-color);
+  margin-bottom: 1rem;
+  letter-spacing: -0.01rem;
+  transition: color 0.3s ease;
+}
+
+.card--title:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.card--description {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--grey-color);
+  margin-bottom: 1rem;
+  letter-spacing: -0.01rem;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card--author-image {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.card--author-name {
+  margin-left: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--black-color);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
